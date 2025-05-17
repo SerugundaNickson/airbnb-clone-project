@@ -119,3 +119,59 @@ This project uses a range of technologies to implement the backend, database, AP
 ###  RESTful APIs
 - **Purpose**: Used to structure how the backend communicates with the frontend or other services, following HTTP standards.
 
+## Database Design
+
+The database schema for the AirBnB Clone project includes key entities that represent the core functionalities of the platform. Each entity contains important fields and has defined relationships with others.
+
+###  Users
+Represents the people using the platform (guests and hosts).
+- `id`: Unique identifier
+- `name`: Full name of the user
+- `email`: Email address (must be unique)
+- `password_hash`: Hashed password for authentication
+- `is_host`: Boolean flag to indicate if the user is a host
+
+###  Properties
+Represents accommodations listed by hosts.
+- `id`: Unique identifier
+- `user_id`: Foreign key linking to the host (Users table)
+- `title`: Name or title of the property
+- `description`: Detailed description
+- `location`: Address or general location
+
+###  Bookings
+Represents reservations made by users.
+- `id`: Unique identifier
+- `user_id`: Foreign key for the guest (Users table)
+- `property_id`: Foreign key for the booked property
+- `check_in`: Date of check-in
+- `check_out`: Date of check-out
+
+###  Reviews
+Allows users to leave feedback after a stay.
+- `id`: Unique identifier
+- `user_id`: Foreign key of the reviewer
+- `property_id`: Foreign key of the reviewed property
+- `rating`: Numerical rating (e.g., 1 to 5)
+- `comment`: Textual review
+
+###  Payments
+Tracks financial transactions for bookings.
+- `id`: Unique identifier
+- `booking_id`: Foreign key for the related booking
+- `amount`: Total amount paid
+- `payment_method`: e.g., Credit Card, PayPal
+- `payment_status`: e.g., Paid, Pending, Failed
+
+---
+
+###  Entity Relationships
+
+- A **User** can be a **host** (owns multiple properties) or a **guest** (books properties).
+- A **Property** belongs to one **User** (host).
+- A **Booking** is made by a **User** and is linked to one **Property**.
+- A **Review** is written by a **User** about a **Property** after a booking.
+- A **Payment** is associated with one **Booking**.
+
+
+
