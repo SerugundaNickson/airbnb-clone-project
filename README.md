@@ -221,4 +221,19 @@ All API requests will be sent over HTTPS to encrypt data in transit. This preven
 ### Protection of Sensitive Data
 Sensitive information such as passwords and payment details will be securely stored using encryption and hashing algorithms. This protects user data even in the event of a data breach.
 
+## CI/CD Pipeline
+
+Continuous Integration and Continuous Deployment (CI/CD) pipelines automate the process of testing, building, and deploying code. They ensure that new changes are integrated smoothly into the main codebase and deployed without manual intervention.
+
+CI/CD pipelines are important because they help catch bugs early, reduce integration issues, and ensure that the application remains in a deployable state at all times. This allows for faster and more reliable updates to the project.
+
+Tools that could be used for implementing the CI/CD pipeline include:
+- **GitHub Actions**: Automates testing, linting, and deployment workflows directly from the GitHub repository.
+- **Docker**: Provides containerization for consistent development, testing, and deployment environments.
+- **Heroku or AWS**: Cloud platforms that can be integrated into the pipeline for automatic deployment.
+- **PostgreSQL service**: Can be added to test environments for database-related validations during CI.
+
+By setting up a CI/CD pipeline, the team can ensure higher code quality, improved collaboration, and faster feature delivery.
+
+
 
