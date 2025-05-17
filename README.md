@@ -173,5 +173,31 @@ Tracks financial transactions for bookings.
 - A **Review** is written by a **User** about a **Property** after a booking.
 - A **Payment** is associated with one **Booking**.
 
+## Feature Breakdown
+
+The Airbnb Clone project includes several core features that replicate the functionalities of the original Airbnb platform. Each feature is designed to deliver a complete and interactive user experience.
+
+### User Management
+Allows users to sign up, log in, and manage their profiles. This feature supports user authentication and role distinction between guests and hosts.
+
+### Property Management
+Enables hosts to list, edit, and delete property listings. Hosts can provide details such as descriptions, locations, pricing, and photos for potential guests.
+
+### Booking System
+Allows users to view available properties and make reservations. This system manages booking dates, availability, and prevents conflicts in scheduling.
+
+### Payment Processing
+Handles secure payment transactions for bookings. This feature supports multiple payment methods and keeps track of the payment status for each transaction.
+
+### Review and Rating System
+Enables guests to leave reviews and ratings for properties after their stay. It helps maintain trust in the platform and provides feedback for both hosts and future guests.
+
+### Search and Filtering
+Provides users with the ability to search for properties using filters such as location, price, availability, and amenities. This enhances usability and helps users find suitable accommodations quickly.
+
+### Admin Panel (Optional - Advanced)
+Offers administrative controls to monitor users, properties, and bookings. This feature is useful for moderating content and maintaining platform integrity.
+
+
 
 
