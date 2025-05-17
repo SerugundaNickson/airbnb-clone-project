@@ -90,3 +90,32 @@ Project is currently in its setup stage.
   - Ensures continuous integration and delivery.
 - **Role in Project**:
   - Facilitates smooth deployment processes and system reliability.
+
+## Technology Stack
+
+This project uses a range of technologies to implement the backend, database, API, and future frontend functionality.
+
+###  Python
+- **Purpose**: The core programming language used to build the application logic and handle backend operations.
+
+###  Django
+- **Purpose**: A high-level Python web framework used to build RESTful APIs, handle routing, and structure backend services.
+
+###  PostgreSQL
+- **Purpose**: A powerful, open-source relational database system used for storing and managing structured application data.
+
+###  GraphQL
+- **Purpose**: A flexible query language for APIs, allowing the client to request exactly the data it needs — enhancing performance and reducing over-fetching.
+
+###  Pytest
+- **Purpose**: A testing framework used to write and run unit tests, ensuring that the application functions correctly and remains stable over time.
+
+###  Git & GitHub
+- **Purpose**: Version control tools used to track code changes, collaborate with others, and manage source code in the cloud.
+
+###  Docker (Optional in later stages)
+- **Purpose**: Used to containerize the application for consistent development, testing, and deployment environments.
+
+###  RESTful APIs
+- **Purpose**: Used to structure how the backend communicates with the frontend or other services, following HTTP standards.
+
